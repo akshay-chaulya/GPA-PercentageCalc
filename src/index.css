@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+#root {
+    @apply relative
+}
+
+.gpa-card {
+    @apply w-full text-3xl grid md:grid-cols-gpa gap-8 shadow-xl ring-[0.5px] ring-gray-100 py-8 px-10 rounded-md
+}
+
+.gpa-card h1,
+.gpa-card hr {
+    @apply col-span-2 text-4xl uppercase max-sm:text-[1.8rem] max-sm:font-medium
+}
+
+.gpa-card label {
+    @apply self-center max-sm:text-2xl
+}
+
+.gpa-card input {
+    @apply border border-black p-2 max-sm:w-[100%] outline-none rounded-md placeholder:text-2xl
+}
+
+.gpa-card button {
+    @apply w-[10rem] col-start-2 justify-self-end
+}
+
+
+.dgpa-card {
+    @apply sm:grid-cols-Dgpa max-sm:grid-cols-smDgpa
+}
+
+.dgpa-card h1,
+.dgpa-card hr {
+    @apply sm:col-span-4 max-sm:col-span-2
+}
+
+/* .dgpa-card input {
+    @apply max-sm:w-[80%]
+} */
+
+.dgpa-card button {
+    @apply sm:col-start-4 max-sm:col-start-2 justify-self-end
+}
+
+
+footer li {
+    @apply bg-white rounded-full
+}
+
+footer li img {
+    @apply w-14 h-14
+}
